@@ -1,0 +1,183 @@
+* {
+  font-family: roboto, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+header, .first, footer {
+  background-color: #1F2937;
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FaF8;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bolder;
+  color: #F9FAF8;
+}
+
+.first p, a, .fourth {
+  font-size: 18px;
+  color: #E5E7EB;
+}
+
+button, .fourth {
+  background-color: #3883F6;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
+}
+
+.image-row img {
+  border: 5px solid #3883F6;
+  border-radius: 10px;
+}
+
+.third {
+  background-color: #E5E7EB;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 36px;
+  color: #1F2937;
+}
+
+footer {
+  color: #F9FaF8;
+  text-align: center;
+}
+
+button {
+  border-radius: 7px;
+  border: 2px solid white;
+  font-size: 16px;
+  color: white;
+  padding: 4px 16px;
+}
+
+/* flexbox */
+/** {
+  border: 3px solid red;
+  box-sizing: border-box;
+}*/
+
+header, header li, .first .content, .second {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 96px;
+}
+
+header li {
+  gap: 16px;
+}
+
+.first .content .left, .first .content .right {
+  display: flex;
+  width: 50%
+}
+
+.first .content .left {
+  flex-direction: column;
+}
+
+.first .content .right {
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.first button {
+  align-self: flex-start;
+  border: 0;
+}
+
+.second {
+  flex-direction: column;
+  align-items: center;
+}
+
+.second .image-row {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.image-row .image {
+  width: min-content;
+}
+
+.third {
+  display: flex;
+  justify-content: center;
+}
+
+.quote-box {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+}
+
+.author {
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: bold;
+}
+.fourth {
+  background-color: white;
+}
+
+.sign-up-box {
+  background-color: #3882F6;
+  border-radius: 10px;
+}
+
+.sign-up-box .text {
+  width: 60%;
+}
+
+.button-box {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-up-box, .quote-box, .image-row, .content {
+  display: flex;
+  padding: 24px 48px;
+  margin: 24px 96px;
+}
+
+.content {
+  padding: 0;
+}
